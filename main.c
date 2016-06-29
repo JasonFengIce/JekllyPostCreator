@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
     timeinfo = localtime(&rawtime);
 
     int year = 1900 + timeinfo->tm_year;
-    int month = timeinfo->tm_mon;
+    int month = timeinfo->tm_mon + 1;
     int day = timeinfo->tm_mday;
 
 
